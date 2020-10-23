@@ -1,5 +1,5 @@
 <?php
-	include("db/config.php");
+	include("config.php");
 	session_start();
 
 	if (isset($_POST['username']) and isset($_POST['password'])) {

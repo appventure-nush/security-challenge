@@ -1,5 +1,5 @@
 <?php
-   define('DB_SERVER', 'localhost');
+   define('DB_SERVER', 'db');
    // The DB credentials should not be be stored in source control, but they are include here to provide a complete example.  
    define('DB_USERNAME', 'sec_user');
    define('DB_PASSWORD', 'DgWWTcq!SfjP49Xr');

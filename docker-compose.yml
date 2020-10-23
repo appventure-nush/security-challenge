@@ -4,16 +4,37 @@ networks:
   primary:
     external:
       name: primary
+  sqli:
+    external: false
 
 services:
+  db:
+    image: mysql
+    restart: always
+    command: --default-authentication-plugin=mysql_native_password
+    networks:
+    - sqli
+    environment:
+        MYSQL_ROOT_PASSWORD: 3667axmTN8WHK5nTI4M8ahaWXwZOoP8b
+        MYSQL_DATABASE: security_challenge
+        MYSQL_USER: sec_user
+        MYSQL_PASSWORD: DgWWTcq!SfjP49Xr
+    expose:
+    - "3306"
+
   web:
     image: registry.nush.app/steam-sqli:latest
     restart: always
     networks:
     - primary
+    - sqli
     expose:
     - "8080"
+    depends_on:
+    - db
     labels:
     - "traefik.enable=true"
-    - "traefik.http.routers.steam-sqli.rule=Host(`dsa.nush.app`)"
-    - "traefik.http.routers.steam-sqli.entrypoints=http"
+    - "traefik.http.routers.steam-sqli.rule=Host(`sqli.steam.nush.app`)"
+    - "traefik.http.routers.steam-sqli.entrypoints=https"
+    - "traefik.http.routers.steam-sqli.tls=true"
+    - "traefik.http.routers.steam-sqli.tls.certresolver=tlsresolver"

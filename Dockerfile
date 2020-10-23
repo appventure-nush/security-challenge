@@ -1,3 +1,6 @@
+FROM mysql
+ADD src/db/security_challenge.sql /tmp/
+
 FROM alpine:3.12
 LABEL Maintainer="Tim de Pater <code@trafex.nl>" \
       Description="Lightweight container with Nginx 1.18 & PHP-FPM 7.3 based on Alpine Linux."

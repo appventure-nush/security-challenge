@@ -8,7 +8,7 @@
 -- PHP Version: 5.5.9-1ubuntu4.20
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET time_zone = "+00:00";
+SET time_zone = "+08:00";
 
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
@@ -25,22 +25,25 @@ USE `security_challenge`;
 -- --------------------------------------------------------
 
 --
--- Table structure for table `challenge_clue`
+-- Table structure for table `challenge_flag`
 --
 
-CREATE TABLE IF NOT EXISTS `challenge_clue` (
+CREATE TABLE IF NOT EXISTS `challenge_flag` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `info` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=3 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=6 ;
 
 --
--- Dumping data for table `challenge_clue`
+-- Dumping data for table `challenge_flag`
 --
 
-INSERT INTO `challenge_clue` (`id`, `info`) VALUES
+INSERT INTO `challenge_flag` (`id`, `info`) VALUES
 (1, 'Is this the real life?'),
-(2, 'Is this just fantasy?');
+(2, 'Is this just fantasy?'),
+(3, 'Caught in a landslide,'),
+(4, 'No escape from reality.'),
+(5, 'steam2020{mY_sqL_m0R3_L1k3_oUr_sQL}');
 
 -- --------------------------------------------------------
 
@@ -88,7 +91,7 @@ CREATE TABLE IF NOT EXISTS `users` (
 --
 
 INSERT INTO `users` (`id`, `username`, `password`) VALUES
-(1, 'admin', 'Welc0meT0NetlightEdgeC0nferenceInSt0ckh0lm!');
+(1, 'admin', 'w3lc0M3toSt34mC4rN2020!');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

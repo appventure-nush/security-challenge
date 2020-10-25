@@ -17,8 +17,8 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Netlight Security Challenge</title>
-		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+		<title>Erutnevppa Corp</title>
+		<link rel="shortcut icon" href="erutnevppa-logo.png" type="image/x-icon">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<!-- Bootstrap -->
 		<link href="css/bootstrap.min.css" rel="stylesheet">
@@ -40,7 +40,7 @@
 		<div class="container">
 			<h1>Welcome</h1>
 			<a href="logout.php"><button type="button" class="btn btn-primary">Log Out</button></a>
-			<h3>Search Office</h3> 
+			<h3>Search Offices</h3> 
 			<form method="post" action="" class="form-search">
 				<div class="row">
 					<div class="col-xs-12 col-sm-6 col-md-4">

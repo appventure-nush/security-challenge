@@ -28,8 +28,8 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Netlight Security Challenge</title>
-		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+		<title>Erutnevppa Corp</title>
+		<link rel="shortcut icon" href="erutnevppa-logo.png" type="image/x-icon">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 		<!-- Bootstrap -->
 		<link href="css/bootstrap.min.css" rel="stylesheet">
@@ -50,8 +50,8 @@
 
 		<div class="container">
 			<form action="" method="post" class="form-login">
-				<h1>Security Challenge</h1>
-				<h3>Please log in</h2>
+				<h1>Erutnevppa Corp. Secure Database</h1>
+				<h3>Please authenticate</h2>
 				<label for="inputUsername" class="sr-only">Username</label>
 				<input type="text" name="username" id="inputUsername" class="form-control" placeholder="Username" required autofocus>
 				<label for="inputPassword" class="sr-only">Password</label>
